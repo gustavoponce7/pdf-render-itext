@@ -7,9 +7,6 @@ response = requests.get('http://localhost:8080/employees')
 assert response.status_code == 200
 assert response.status_code == requests.codes.ok
 
-#RESPONSE LENGHT
-print(response.json().size)
-
 #CONTENT TYPE
 print('###CONTENT TYPE###')
 print(response.headers['content-type'])
